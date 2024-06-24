@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Feedbacks</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin - Customer Feedbacks</h1>
+        <nav>
+            <a href="feedback.html" target="_blank"><b>FEEDBACK FORM</b> </a>
+        </nav>
+        <div class="filter">
+            <label for="filterRating">Filter by Rating:</label>
+            <input type="number" id="filterRating" min="1" max="5">
+            <label for="filterDate">Filter by Date:</label>
+            <input type="date" id="filterDate">
+            <button onclick="filterFeedback()">Filter</button>
+        </div>
+        <div id="feedbackList"></div>
+        <div id="averageRating"></div>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

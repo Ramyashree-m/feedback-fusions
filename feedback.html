@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Feedback</h1>
+        <nav>
+            <a href="admin.html" target="_blank"><b>ADMIN PAGE</b></a>
+        </nav>
+        <form id="feedbackForm">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <label for="contact">Contact Information (10 digits):</label>
+            <input type="text" id="contact" name="contact" pattern="\d{10}" title="Please enter exactly 10 digits" required>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>
